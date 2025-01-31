@@ -1,4 +1,4 @@
-import pytest  # также импортируем pytest-mock
+# import pytest , также импортируем pytest-mock
 from CW import get_weather
 
 
@@ -12,7 +12,7 @@ from CW import get_weather
 # Добавим информацию внутри фигурных скобок: погоду и список с описанием
 def test_get_weather(mocker):
     mock_get = mocker.patch('CW.requests.get')
-    
+
     # Прописываем mock-объект, с помощью return меняя возвращаемое значение,
     # а также указываем, что за значение мы меняем — это статус-код
     mock_get.return_value.status_code = 200

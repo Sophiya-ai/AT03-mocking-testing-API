@@ -1,5 +1,6 @@
 import requests
 
+
 def github_user(username):
     url = f'https://api.github.com/users/{username}'
     response = requests.get(url)

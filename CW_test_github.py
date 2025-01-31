@@ -1,4 +1,3 @@
-import requests
 from CW_github import github_user
 
 
